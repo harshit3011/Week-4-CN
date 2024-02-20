@@ -1,0 +1,101 @@
+//HTML
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+       <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="..."
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="center">
+      <h1 class="margin10">
+        Off Canvas Component & Modal
+      </h1>
+
+      <!--Insert Button for Modal Component here */ -->
+        <button
+  type="button"
+  class="btn btn-primary margin10"
+  data-bs-toggle="modal"
+  data-bs-target="#modalFeedbackForm"
+>
+  Submit Feedback (via Modal Component)
+</button>
+
+<button
+  type="button"
+  class="btn btn-primary margin10"
+  data-bs-toggle="offcanvas"
+  data-bs-target="#offcanvasFeedbackForm"
+>
+  Submit Feedback (via Offcanvas Component)
+</button>
+      
+      <!--Insert Button for Offcanvas Component here -->
+
+    </div>
+      <div class="modal fade" id="modalFeedbackForm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Feedback Form (Modal)</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Your feedback form content goes here -->
+        <form>
+          <!-- Form fields go here -->
+          <button type="submit" class="btn btn-primary">Submit Feedback</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Offcanvas Component -->
+<div
+  class="offcanvas offcanvas-start"
+  tabindex="-1"
+  id="offcanvasFeedbackForm"
+  aria-labelledby="offcanvasFeedbackFormLabel"
+>
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasFeedbackFormLabel">Feedback Form (Offcanvas)</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <!-- Your feedback form content goes here -->
+    <form>
+      <!-- Form fields go here -->
+      <button type="submit" class="btn btn-primary">Submit Feedback</button>
+    </form>
+  </div>
+</div>
+
+<!-- Include Bootstrap JS at the end of the body -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="..." crossorigin="anonymous"></script>
+    <!--  Insert Code for Modal Here -->
+
+    <!-- Insert Code for Offcanvas Here -->
+
+  </body>
+</html>
+
+
+
+//CSS
+
+.center {
+  text-align: center;
+}
+
+.margin10 {
+  margin: 10px;
+}
